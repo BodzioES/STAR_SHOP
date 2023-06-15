@@ -1,0 +1,320 @@
+:root {
+  --Black: #212121;
+  --White: #ffffff;
+  --Font: #131313;
+  --accent: teal;
+}
+html {
+  min-height: 100%;
+}
+body {
+  background: linear-gradient(to top, rgb(170, 170, 170), rgb(237, 237, 237));
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+/*TUTAJ ZACZYNA SIE NAGLOWEK HEADER*/
+#header {
+  width: 100%;
+}
+/*NAPISY W TYM NAGLOWKU*/
+.name,.login,.aboutus,.aboutuss,.store,.storee,.account,.logout,.cart{
+  color: var(--Font);
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+}
+/*TO JEST TEN NAPIS W LEWYM GORNYM ROGU STRONY CZYLI TE LOGO NO XD*/
+.shop {
+  position: absolute;
+  height: 30px;
+  top: 23px;
+  border: 3px solid #212121;
+  border-radius: 10px;
+  padding: 5px;
+  left: 2%;
+}
+/*TO JEST DO TEGO DUPNEGO ZDJECIA SZTURMOWCA*/
+.name{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  top: 5%;
+  left: 50vh;
+}
+.login{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  top: 5%;
+  left:70vh;
+}
+.aboutus {
+  font-family: monospace;
+  top: 30px;
+  right: 40px;
+}
+.aboutuss {
+  font-family: monospace;
+  top: 30px;
+  right: 90px;
+}
+.cart {
+  font-family: monospace;
+  top: 30px;
+  right: 185px;
+}
+/*TO JEST TA CZERWONA KROPECZKA NA KTOREJ JEST WYSWIETLANA ILOSC PRODUKTOW W KOSZYKU*/
+#cart-item{
+  color: white;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.863);
+  border-radius: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: 45px;
+  right: 173px;
+}
+/*TU KONCZY SIE TA CZERWONA KROPECZKA NA KTOREJ JEST WYSWIETLANA ILOSC PRODUKTOW W KOSZYKU*/
+.store {
+  font-family: monospace;
+  top: 30px;
+  right: 265px;
+}
+.storee {
+  font-family: monospace;
+  top: 30px;
+  right: 230px;
+}
+.account {
+  font-family: monospace;
+  top: 30px;
+  right: 320px;
+}
+.logout {
+  font-family: monospace;
+  top: 30px;
+  right: 350px;
+}
+.account:hover,.cart:hover,.store:hover,.storee:hover,.aboutus:hover,.aboutuss:hover,.logout:hover{
+  height: 30px;
+  border-radius: 15px;
+  background-color: #21212138;
+}
+.store:active,.storee:active,.aboutus:active,.aboutuss:active,.logout:active,.cart:active,.account:active{
+  transform: translateY(2px);
+}
+/*TUTAJ KONCZY SIE NAGLOWEK HEADER*/
+/**/
+/*TUTAJ ZACZYNA SIE NAGLOWEK MID*/
+/*TO JEST TEN NAPISZ STAR SHOP*/
+.starshop {
+  position: absolute;
+  top: 25vh;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-family: "Star Wars", sans-serif;
+  font-size: 90px;
+  color: rgb(218, 218, 218);
+  text-shadow: 1px 5px 15px #212121;
+}
+/*TO NA GORZE TO JEST TEN NAPISZ STAR SHOP*/
+/*TO JEST TEN NAPIS BY FANS FOR FANS*/
+.fans {
+  position: absolute;
+  top: 60vh;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-family: "Star Wars", sans-serif;
+  font-size: 15vh;
+  color: rgb(218, 218, 218);
+  text-align: center;
+  text-shadow: 1px 5px 15px #212121;
+  /*animation: fans 5s infinite;*/
+}
+/*@keyframes fans {
+  50% {
+    text-shadow: 10px 20px 30px rgba(0, 0, 0, 0.525);
+  }
+}*/
+/*TO NA GORZE TO JEST TEN NAPIS BY FANS FOR FANS*/
+/*TO JEST TEN DUPNY OBRAZEK SZTURMOWCA*/
+.order{
+  position: absolute;
+  left:75vh; 
+  height: 180vh;
+  transform: translate(-5%, 0%);
+}
+/*TUTAJ KONCZY SIE NAGLOWEK MID*/
+/**/
+/*TUTAJ ZACZYNA SIE NAGLOWEK FOOTER*/
+#footer {
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 30px 3px 1fr 3px 150px 3px 150px 200px;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(209, 209, 209, 0.5);
+  transition: 300ms;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 80%);
+  left: 0;
+  transition: 250ms;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 0.09em rgba(0, 0, 0, 0.198);
+}
+#footer:hover {
+  transform: translate(0, 0);
+}
+
+#footer div {
+  opacity: 0;
+  transition: 100ms;
+  height: 150px;
+}
+#footer:hover * {
+  opacity: 100%;
+}
+/*TO JEST TEN WYSTAJACY POZIOMY PASECZEK PRZY FOOTERZE*/
+#line{
+  transform: translate(-50%, -50%);
+  left:50%;
+  position: absolute;
+  height: 5px !important;
+  width: 10%;
+  background-color: #808080;
+  top:10%;
+  border-radius: 10px;
+  opacity: 1 !important;
+}
+#mycart {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: monospace;
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.268);
+}
+#products {
+  font-family: monospace;
+  display: flex;
+  
+}
+#hmi {
+  font-family: monospace;
+}
+#hmc {
+  font-family: monospace;
+  
+}
+a#checkout {
+  height: 100%;
+  color: #212121;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  background-color: rgb(245, 245, 245);
+}
+a#checkout:hover {
+  background-color: #e4e4e4;
+}
+a#checkout:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+#line1 {
+  height: 70px !important;
+  border-radius: 5px;
+  background-color: #5f5f5f7c;
+}
+#line2 {
+  height: 70px !important;
+  border-radius: 5px;
+  background-color: #5f5f5f7c;
+}
+#line3 {
+  height: 70px !important;
+  border-radius: 5px;
+  background-color: #5f5f5f7c;
+}
+
+#empty-product{
+  font-family: monospace;
+  font-weight: 700;
+  font-size:40px;
+  position: absolute;
+  top:30%;
+  height: 65px !important;
+  border-radius: 30px;
+  color:#61616181;
+  left:8%;
+  text-shadow:2px 2px 15px #d4d4d4;
+}
+#product-footer, #price-footer{
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  top:20px;
+  height: 25px !important;
+  border-radius: 15px;
+  background-color: #dddddde5;
+  padding: 5px;
+  color:#616161;
+}
+#product-footer{
+  transform: translate(40%,20%);
+}
+#price-footer{
+  transform: translate(60%,20%);
+}
+#hmi-zero,#hmi-good{
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 30px;
+  color:#646464;
+  margin-top:45%;
+  margin-left: 40%;
+}
+#hmc-good{
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 20px;
+  color:#646464;
+  margin-top:50%;
+  margin-left: 10%;
+}
+#hmc-zero{
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 20px;
+  color:#646464;
+  margin-top:50%;
+  margin-left: 20%;
+}
+#remove-product{
+  text-decoration: none;
+}
+#notlogged{
+  font-family: monospace;
+  font-weight: 700;
+  font-size:40px;
+  position: absolute;
+  position: absolute;
+  transform: translate(35%, 35%);
+  color:#61616181;
+  text-shadow:2px 2px 15px #d4d4d4;
+}
+.minka{
+  height: 50%;
+  position: absolute;
+  transform: translate(50%, 50%);
+}
+#imagee img{
+  border-radius: 100%;
+}

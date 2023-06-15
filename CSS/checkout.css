@@ -1,0 +1,145 @@
+:root {
+    --Black: #212121;
+    --White: #ffffff;
+    --Font: #131313;
+    --accent: teal;
+  }
+  html{
+    height: 100%;
+  }
+  body {
+    background: linear-gradient(to top, rgb(170, 170, 170), rgb(237, 237, 237));
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+  }
+  #header{
+    margin-bottom: 150px;
+  }
+  .name,.store,.login,.aboutus,.cart,.account,.logout{
+    color: var(--Font);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+  }
+  .name{
+    top: 29px;
+    left: 30vh;
+  }
+  .store {
+    top: 30px;
+    right: 200px;
+  }
+  .login{
+    top: 29px;
+    left:50vh;
+  }
+  .aboutus {
+    top: 30px;
+    right: 40px;
+  }
+  .cart {
+    top: 30px;
+    right: 200px;
+  }
+  .account {
+    top: 30px;
+    right: 300px;
+  }
+  .logout {
+    top: 30px;
+    right: 300px;
+  }
+  .shop{
+    position: absolute;
+    height: 50px;
+    top: 23px;
+    border: 3px solid #212121;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 42%;
+    width: 30vh;
+  }
+  .shop:hover{
+    border: 3px solid #7a7800;
+  }
+  .store:hover,.account:hover,.logout:hover,.cart:hover,.aboutus:hover{
+    height: 35px;
+    border-radius: 15px;
+    background-color: #21212138;
+  }
+  .store:active,.account:active,.cart:active,.aboutus:active,.logout:active,.shop:active{
+    transform: translateY(2px);
+  }
+  /*TUTAJ JEST TO COS REPLACE*/
+  #order{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-family:monospace ;
+    position: static;
+  }
+  .text-complete{
+    margin-bottom: 40px;
+    color:#a00000;
+    font-size: 40px;
+  }
+  #information{
+    background-color: rgba(163, 47, 47, 0.418);
+    width: 60%;
+    margin: auto;
+  }
+  #form-button{
+    margin-top:20px;
+  }
+  .button{
+    width: 60%;
+    height: 30px;
+    font-size: 20px;
+    background-color: #007e04;
+    border:none;
+    font-weight: 700;
+    color:#e6e6e6c4;
+    transition: 0.3s;
+  }
+  .button:hover{
+    color:rgb(245, 245, 245);
+    background-color: #00c90a;
+  }
+  .button:active{
+    transform: translateY(2px);
+  }
+  #form-group{
+    margin-top:10px;
+  }
+  .form-control{
+    width: 60%;
+    text-align: center;
+    height: 20px;
+    background-color: #9696967e;
+    border:none;
+    color:#131313;
+    font-weight: 700;
+}
+#cancel-order{
+  margin-top: 20px;
+}
+.cancel-order{
+  margin-top: 20px;
+  background-color:#a00000;
+  text-decoration: none;
+  width: 60%;
+  color:#d9d9d9c9;
+  font-weight: 700;
+  font-size: 20px;
+  padding:5px 5px 5px 5px;
+  transition: 0.3s;
+}
+.cancel-order:hover{
+  color:#ffffff;
+  background-color: #cf0000;
+}
+#cancel-order:active{
+  transform: translateY(2px);
+}
